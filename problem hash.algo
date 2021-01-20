@@ -1,0 +1,31 @@
+ALGORITHM compare
+VAR
+    arr-one : ARRAY_OF INTEGER[i];
+    arr-two : ARRAY_OF INTEGER[j];
+    i,j,elt-one,elt-two : INTEGER
+    sum : INTEGER : = 0 ;
+BEGIN
+read elt-one[i]
+read elt-two[j]
+    WHILE (elt(i) <= arr-one.length-1[i] AND elt(j)<= arr-two.length-1[j]) DO
+    IF (elt[i] <> elt[j]) THEN
+        sum += elt[i]
+    END_IF
+        j+=1
+    END_WHILE
+
+WHILE (elt(i) <= arr-one.length-1[i] AND elt(j)<= arr-two.length-1[j]) DO
+    IF (elt[j] <> elt[i]) THEN
+    sum += elt[j]
+    END_IF
+        i+=1
+    END_WHILE
+    write (sum)
+
+END
+
+
+
+
+
+
